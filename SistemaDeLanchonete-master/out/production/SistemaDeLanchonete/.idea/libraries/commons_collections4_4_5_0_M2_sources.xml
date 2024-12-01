@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="commons-collections4-4.5.0-M2-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../LIBS/commons collection/commons-collections4-4.5.0-M2/commons-collections4-4.5.0-M2-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../LIBS/commons collection/commons-collections4-4.5.0-M2/commons-collections4-4.5.0-M2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../LIBS/commons collection/commons-collections4-4.5.0-M2/commons-collections4-4.5.0-M2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../LIBS/commons collection/commons-collections4-4.5.0-M2/commons-collections4-4.5.0-M2-test-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/Lanchonete/src" />
+    </SOURCES>
+  </library>
+</component>

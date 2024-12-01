@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="commons-compress-1.27.1-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../LIBS/common compress/commons-compress-1.27.1/commons-compress-1.27.1-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../LIBS/common compress/commons-compress-1.27.1/commons-compress-1.27.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../LIBS/common compress/commons-compress-1.27.1/commons-compress-1.27.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../LIBS/common compress/commons-compress-1.27.1/commons-compress-1.27.1-test-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/Lanchonete/src" />
+    </SOURCES>
+  </library>
+</component>
