@@ -1,0 +1,293 @@
+/* Importação da fonte Montserrat */ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4b0082, #ff8c00);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilos para a capa */
+.header-capa {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.header-capa img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a mensagem acima do cardápio */
+.top-message {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #007BFF; /* Fundo azul */
+    border-radius: 15px;
+    padding: 20px; /* Aumentar o padding para espaçamento maior */
+    width: 90%; /* Mais espaçado para os lados */
+    max-width: 1000px; /* Aumentar a largura máxima */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff; /* Cor do texto branca para contraste */
+}
+
+
+/* Container geral das telas */
+.screen {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos */
+.screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Subtítulos */
+.screen h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Inputs */
+.screen input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Foco nos inputs */
+.screen input:focus {
+    border-color: #4b0082;
+    box-shadow: 0 0 8px rgba(75, 0, 130, 0.3);
+    outline: none;
+}
+
+/* Botões */
+.screen button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Botão padrão */
+.screen button {
+    background: linear-gradient(135deg, #4b0082, #6a0dad);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.2);
+}
+
+/* Botões secundários */
+.screen button:nth-child(even) {
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+}
+
+/* Hover nos botões */
+.screen button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão pressionado */
+.screen button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu de opções */
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.menu-item span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Colunas do menu */
+.menu-column {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left;
+}
+
+/* Lista de pedidos */
+#pedido-itens {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+#pedido-itens li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Total */
+#total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Endereço de entrega */
+#address-section {
+    margin: 15px 0;
+}
+
+#address-section input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+/* Detalhes de pagamento */
+#payment-details {
+    margin: 20px 0;
+}
+
+/* Cartão e Dinheiro */
+#card-details, #cash-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#card-details input, #cash-details input {
+    width: calc(100% - 20px);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .screen {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-column {
+        padding: 0;
+    }
+
+    #payment-options button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Estilos específicos de registro */
+#photo-preview {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#photo-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos para a foto no login */
+#user-photo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#user-photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Foco nos inputs do registro (upload de foto) */
+#register-photo {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* Estilos para botões do menu e outros itens */
+button:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+}
